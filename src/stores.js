@@ -4,16 +4,16 @@ export const FeedbackStore = writable([
     {
       id: 1,
       rating: 10,
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
+      text: 'svelte has less boilerplate than react.',
     },
     {
       id: 2,
       rating: 9,
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
+      text: 'svelte is cool',
     },
     {
       id: 3,
       rating: 2,
-      text: 'this is updated from the store',
+      text: 'animations are easy to add and don\'t bloat the application.',
     },
   ])

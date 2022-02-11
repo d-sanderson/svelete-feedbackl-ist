@@ -2,7 +2,7 @@
   import { FeedbackStore } from "../stores"
 
   $: count = $FeedbackStore.length
-  $: avg = $FeedbackStore.reduce((a, { rating }) => a + rating, 0) / count || 0
+  $: avg = ($FeedbackStore.reduce((a, { rating }) => a + rating, 0) / count || 0).toFixed(2)
 
 </script>
 
