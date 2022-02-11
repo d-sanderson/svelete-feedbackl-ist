@@ -11,7 +11,6 @@
   let rating = 10
 
   const handleSubmit = () => {
-    console.log(rating, text)
     if (text.trim().length > min) {
       const newFeedBack = {
         id: uuidv4(),
@@ -19,7 +18,7 @@
         rating: +rating,
       }
       FeedbackStore.update((currentFb) => [...currentFb, newFeedBack])
-      // text = ''
+      text = ''
     }
   }
 
