@@ -5,8 +5,8 @@
   </script>
   
   <button {type} {disabled} class={style}>
-    <!-- Slot is similar to props.children in react, but less complicated -->
-    <slot></slot>
+    <!-- slot behaves similar to props.children in react, but less complicated -->
+    <slot>
   </button>
   
   
