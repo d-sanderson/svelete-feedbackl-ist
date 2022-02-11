@@ -14,10 +14,9 @@
   const handleInput = () => {
     if(text.trim().length <= min) {
       message = `Text must be at least ${min} characters`
-      btnDisabled = true
     } else {
-      message = null
       btnDisabled = false
+      message = null
     }
   }
   const handleSubmit = () => {
