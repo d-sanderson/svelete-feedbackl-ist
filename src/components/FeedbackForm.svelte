@@ -4,7 +4,7 @@
   import Card from './Card.svelte'
   import Button from './Button.svelte'
   import RatingSelect from './RatingSelect.svelte'
-  
+
   let text = ''
   let rating = 10
   let btnDisabled = true
