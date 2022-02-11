@@ -31,6 +31,7 @@
       })
       text = ''
       rating = 10
+      btnDisabled = true
     }
   }
 </script>
