@@ -1,6 +1,6 @@
 <script>
   import { onMount, onDestroy } from "svelte"
-  import { fade, scale } from "svelte/transition"
+  import { scale } from "svelte/transition"
   import FeedbackItem from "./FeedbackItem.svelte"
   import { FeedbackStore } from "../stores"
 
@@ -23,7 +23,7 @@
 
 <!-- $FeedbackStore is shorthand of what is done above. -->
 {#each $FeedbackStore as item (item.id)}
-  <div in:scale out:fade={{ duration: 500 }}>
+  <div transition:scale>
     <FeedbackItem {item} />
   </div>
 {/each}
