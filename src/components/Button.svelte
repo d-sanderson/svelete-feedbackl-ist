@@ -6,7 +6,7 @@
   
   <button {type} {disabled} class={style}>
     <!-- slot behaves similar to props.children in react, but less complicated -->
-    <slot>
+    <slot/>
   </button>
   
   
