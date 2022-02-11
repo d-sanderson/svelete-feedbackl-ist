@@ -2,11 +2,10 @@
   import { createEventDispatcher } from "svelte"
 
   const dispatch = createEventDispatcher()
-  export let rating
-  let selected = 10
+  export let selected = 10
   const onChange = (e) => {
-    rating = e.currentTarget.value
-    dispatch('rating-select', rating)
+    selected = e.currentTarget.value
+    dispatch('rating-select', selected)
   }
 </script>
 

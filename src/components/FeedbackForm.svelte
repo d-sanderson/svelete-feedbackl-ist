@@ -30,6 +30,7 @@
         return [newFeedback, ...currentFeedback]
       })
       text = ''
+      rating = 10
     }
   }
 </script>
@@ -40,7 +41,7 @@
     <h2>How would you rate your service with us?</h2>
   </header>
 <form on:submit|preventDefault={handleSubmit}>
-  <RatingSelect on:rating-select={handleSelect} />
+  <RatingSelect selected={rating} on:rating-select={handleSelect} />
   <div class="input-group">
     <input type="text" on:input={handleInput} bind:value = {text} placeholder="Tell us something that keeps you coming back">
     <Button disabled={btnDisabled} type="submit">Send</Button>
